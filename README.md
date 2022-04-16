@@ -1,29 +1,44 @@
-![Vue.js Logo](https://github.com/vercel/vercel/blob/master/packages/frameworks/logos/vue.svg)
+# SvelteKit
 
-# Vue.js Example
-
-This directory is a brief example of a [Vue.js](https://vuejs.org/) app that can be deployed with Vercel and zero configuration.
+Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte), deployed to [Vercel](https://vercel.com).
 
 ## Deploy Your Own
 
-Deploy your own Vue.js project with Vercel.
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fvercel%2Ftree%2Fmain%2Fexamples%2Fsveltekit&project-name=sveltekit-vercel&repository-name=sveltekit-vercel&demo-title=SvelteKit%20%2B%20Vercel&demo-description=A%20SvelteKit%20app%20optimized%20Edge-first.&demo-url=https%3A%2F%2Fsveltekit-template.vercel.app%2F)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/vercel/vercel/tree/main/examples/vue)
+_Live Example: https://sveltekit-template.vercel.app_
 
-_Live Example: https://vue.now-examples.now.sh_
+## Creating a project
 
-### How We Created This Example
+If you're seeing this, you've probably already done this step. Congrats!
 
-To get started with Vue.js deployed with Vercel, you can use the [Vue CLI](https://cli.vuejs.org/guide/creating-a-project.html#vue-create) to initialize the project:
+```bash
+# create a new project in the current directory
+npm init svelte@next
 
-```shell
-$ vue create
+# create a new project in my-app
+npm init svelte@next my-app
 ```
 
-### Deploying From Your Terminal
+> Note: the `@next` is temporary
 
-You can deploy your new Vue.js project with a single command from your terminal using [Vercel CLI](https://vercel.com/download):
+## Developing
 
-```shell
-$ vercel
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+
+```bash
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
 ```
+
+## Building
+
+This uses the adapter-auto for SvelteKit, which detects Vercel and runs adapter-vercel on your behalf.
+
+```bash
+npm run build
+```
+
+> You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
