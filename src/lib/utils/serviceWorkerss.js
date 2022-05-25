@@ -1,5 +1,5 @@
 
-/**@type {(url: URL) => String} */
+/**@type {(url: URL) => string} */
 const getOriginFromUrl = (url) => new URL(url).origin
 
 /**
@@ -31,6 +31,11 @@ const getBodyContent = async (req) => {
  * @param {Request} req 
  */
 export const authProcessor = (req) => {
+
+  const sameOrigin = self.location.origin == getOriginFromUrl(req.url);
+  const isSecure = self.location.protocol == 'https:' || self.location.hostname == 'localhost';
+
+
   const requestProcessor = (idToken) => {
     // let req = evt.request;
 
@@ -38,10 +43,7 @@ export const authProcessor = (req) => {
     /**@type {Promise<Response> | Promise<void>} */
     let processRequestPromise = Promise.resolve();
     // For same origin https requests, append idToken to header.
-    if (self.location.origin == getOriginFromUrl(evt.request.url) &&
-        (self.location.protocol == 'https:' ||
-         self.location.hostname == 'localhost') &&
-        idToken) {
+    if (sameOrigin && isSecure && idToken) {
       // Clone headers as request headers are immutable.
       const headers = new Headers();
       req.headers.forEach((val, key) => {
