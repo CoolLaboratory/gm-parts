@@ -43,10 +43,10 @@ const getIdTokenPromise = () => {
 
 
 
-self.addEventListener('fetch', (event) => {
+self.addEventListener('fetch', async (event) => {
   /** @type {FetchEvent} */
   const evt = event;
-  const process = authProcessor(evt.request)
+  const authorize = authProcessor(evt.request)
 
   
   // Fetch the resource after checking for the ID token.
@@ -54,5 +54,5 @@ self.addEventListener('fetch', (event) => {
   // in offline mode.
   const idToken = await getIdTokenPromise()
 
-  evt.respondWith(process(idToken));
+  evt.respondWith(authorize(idToken));
 });
