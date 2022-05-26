@@ -1,0 +1,24 @@
+.icon-button {
+  --size: 4rem;
+  --radius: 20px;
+  aspect-ratio: 1/1;
+
+  display: flex;
+  inline-size: var(--size, 40px);
+  block-size: var(--size, 40px);
+  border: none;
+  border-radius: var(--radius, 50%);
+  background-color: var(--surface);
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+.icon-button.outlined {
+  background-color: transparent;
+  border: 2px solid currentColor;
+}
+
+.icon-button:focus-visible {
+  outline-offset: 8px;
+  outline-color: rgba(6, 73, 165, 0.694);
+}
