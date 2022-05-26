@@ -2,8 +2,12 @@
 
 @import "@fontsource/fira-mono";
 
-@import "./lib/toast/toast.css";
-@import "./lib/shared/styles/IconButton.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@use "./lib/toast/toast.css";
+@use "./lib/shared/styles/IconButton.css";
 
 @custom-media --motionOK (prefers-reduced-motion: no-preference);
 @custom-media --dark (prefers-color-scheme: dark);
@@ -14,7 +18,7 @@
   --ratio-portrait: 3/4;
   --ratio-widescreen: 16/9;
   --ratio-ultrawide: 18/5;
-  --ratio-golden: 1.6180/1;
+  --ratio-golden: 1.618/1;
 }
 
 :root {
@@ -32,33 +36,42 @@
   --column-width: 42rem;
   --column-margin-top: 4rem;
 
-
-  
   --surface: #ececec;
   --on-surface: #222222;
 
   --surface-1: #fafafa;
   --on-surface-1: #222222;
-  
+
   --text-secondary: rgb(22 22 22 / 0.65);
+
+  --scrollbar-track: #b5b4b4;
+  --scrollbar-thumb: #3d3d3d;
 }
 
-@media(prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   :root {
     --surface: #212121;
     --on-surface: #fafafa;
     --surface-1: #3d3d3d;
     --on-surface-1: #fafafa;
     --text-secondary: rgb(255 255 255 / 0.25);
+
+    
+    --scrollbar-track: #242424;
+    --scrollbar-thumb: #3d3d3d;
   }
 }
+
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background-color: var(--scrollbar-track); border-radius: 4px; }
+::-webkit-scrollbar-thumb { background-color: var(--scrollbar-thumb); border-radius: 4px; }
+
 
 body {
   min-height: 100vh;
   margin: 0;
 }
-
-
 
 #app {
   min-height: 100vh;
