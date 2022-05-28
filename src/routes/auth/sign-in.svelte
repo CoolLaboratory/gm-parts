@@ -2,8 +2,16 @@
   import LoginProviders from '$lib/components/auth/LoginProviders.svelte';
   import PasswordLink from '$lib/components/auth/PasswordLink.svelte'
   import Divider from '$lib/components/Divider.svelte';
+
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js', { scope: '/' });
+  }
 </script>
 
+
+<svelte:head>
+  <title>GMParts | Sign In</title>
+</svelte:head>
 
 
 <div class="card">
