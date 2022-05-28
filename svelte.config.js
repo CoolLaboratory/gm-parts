@@ -10,6 +10,8 @@ const config = {
     methodOverride: {
       allowed: ["PATCH", "DELETE"],
     },
+
+    serviceWorker: { register: false }
   },
 
   preprocess: [
