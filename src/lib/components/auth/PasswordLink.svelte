@@ -1,6 +1,6 @@
 <script>
   import { getAuth, sendSignInLinkToEmail } from "firebase/auth";
-  import isEmail from "$lib/isEmail";
+  import isEmail from "$lib/utils/isEmail";
 
 
   

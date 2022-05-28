@@ -97,8 +97,8 @@
 				<h4>Συνεργάτες</h4>
 			</header>
 			<div class="grid gap-1 mt-6">
-				<a class="text-black/60 dark:text-white/50">Έχεις συνεργείο;</a>
-				<a class="text-black/60 dark:text-white/50">Είσαι προγραμματιστής;</a>
+				<a href="/sinergates" class="text-black/60 dark:text-white/50">Έχεις συνεργείο;</a>
+				<a href="#/" class="text-black/60 dark:text-white/50">Είσαι προγραμματιστής;</a>
 			</div>
 		</section>
 
@@ -109,9 +109,9 @@
 				<h4>Αγορά μέσω e-shop</h4>
 			</header>
 			<div class="grid gap-1  mt-6">
-				<a class="text-black/60 dark:text-white/50">Πλεονεκτήματα</a>
-				<a class="text-black/60 dark:text-white/50">Ασφάλεια αγορών</a>
-				<a class="text-black/60 dark:text-white/50">Πολιτική επιστροφών</a>
+				<a href="#/" class="text-black/60 dark:text-white/50">Πλεονεκτήματα</a>
+				<a href="#/" class="text-black/60 dark:text-white/50">Ασφάλεια αγορών</a>
+				<a href="#/" class="text-black/60 dark:text-white/50">Πολιτική επιστροφών</a>
 			</div>
 		</section>
 
@@ -122,9 +122,9 @@
 				<h4>Βοήθεια & Επικοινωνία</h4>
 			</header>
 			<div class="grid gap-1  mt-6">
-				<a class="text-black/60 dark:text-white/50 text-overflow">Η παραγγελία μου μέσω Skroutz</a>
-				<a class="text-black/60 dark:text-white/50 text-overflow">Επιστροφές</a>
-				<a class="text-black/60 dark:text-white/50 text-overflow"
+				<a href="#/" class="text-black/60 dark:text-white/50 text-overflow">Η παραγγελία μου μέσω Skroutz</a>
+				<a href="#/" class="text-black/60 dark:text-white/50 text-overflow">Επιστροφές</a>
+				<a href="#/" class="text-black/60 dark:text-white/50 text-overflow"
 					>Χρειάζεσαι περισσότερη βοήθεια;</a
 				>
 			</div>
@@ -142,9 +142,8 @@
 
 	<div class="row">
 		<p class="my-6">
-			© 2022 GMParts Α.Ε. All Rights and Lefts reserved. <a>FAQ</a> -
-			<a>Όροι χρήσης</a>
-			| <a>Πολιτική Απορρήτου</a> | <a>Cookies</a>
+			© 2022 GMParts Ο.Ε. All Rights and Lefts reserved. <a href="#/">FAQ</a> -
+			<a href="#/">Όροι χρήσης</a> <a href="#/">Πολιτική Απορρήτου</a> | <a href="#/">Cookies</a>
 		</p>
 	</div>
 </footer>
