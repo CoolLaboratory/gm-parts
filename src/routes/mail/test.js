@@ -1,4 +1,4 @@
-import isEmail from "$lib/isEmail";
+import isEmail from "$lib/utils/isEmail";
 
 const _error = (message = 'Invalid Input', status = 422) => ({
   status, body: { error: message }
