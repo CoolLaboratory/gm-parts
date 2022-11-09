@@ -18,7 +18,7 @@
 			</picture>
 		</span>
 
-		to your new<br />SvelteKit app
+		to your new<br />Shop
 	</h1>
 
 	<h2>
