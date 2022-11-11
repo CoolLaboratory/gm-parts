@@ -1,9 +1,8 @@
 {
-	"name": "@geroutsis/shop",
+	"name": "@geroutsis/dashboard",
 	"version": "0.0.1",
-	"type": "module",
 	"scripts": {
-		"dev": "vite dev --port 8080 --host shop.geroutsis.test",
+		"dev": "vite dev --port 3001 --host dashboard.geroutsis.test",
 		"build": "vite build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
@@ -22,5 +21,6 @@
 		"svelte-check": "^2.9.2",
 		"typescript": "^4.8.4",
 		"vite": "^3.2.3"
-	}
+	},
+	"type": "module"
 }

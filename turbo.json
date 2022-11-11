@@ -1,12 +1,10 @@
 {
   "pipeline": {
-    "dev": { "cache": false },
     "build": {
       "dependsOn": ["^build"],
       "outputs": [".svelte-kit/**", ".vercel/**"]
     },
-    "lint": {
-      "outputs": []
-    }
+    "lint": { "outputs": [] },
+    "dev": { "cache": false }
   }
 }

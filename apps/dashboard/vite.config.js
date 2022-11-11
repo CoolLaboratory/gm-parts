@@ -5,7 +5,7 @@ const config = {
 	css: {preprocessorOptions: {css: 'external'}},
 	plugins: [sveltekit()],
 	server: {
-		origin: 'http://shop.geroutsis.test:8080'
+		origin: 'http://dashboard.geroutsis.test:3001'
 	}
 };
 
